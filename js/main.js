@@ -4,8 +4,8 @@ import { importDirectory, numImports } from "./util/import.js";
 import TextCode from "./classes/external/textcode.js";
 
 // Load css first
-await importDirectory("/css/", "css");
-await importDirectory("/js/", "js");
+await importDirectory("./css/", "css");
+await importDirectory("./js/", "js");
 
 // Set up console
 const useConsole = false;
