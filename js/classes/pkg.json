@@ -1,0 +1,4 @@
+{
+"files":["asminstruction.js", "jseditor.js", "register.js", "instructioncontext.js", "flags.js", "memory2.js", "gui.js", "breakpoints.js"],
+"directories":["external"]
+}

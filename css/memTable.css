@@ -1,0 +1,50 @@
+.tableContainer {
+    width: 50%;
+    height: 100%;
+    display: block;
+    float: left;
+    overflow-y: auto;
+}
+
+.memTable {
+
+    width: 100%;
+    /*min-height: calc(50% - 40px); /* table height here */
+    max-height: calc(100% - 40px); /* table height here*/
+    height: calc(100% - 40px);
+    background-color: aliceblue;
+    padding: 5px;
+    box-sizing: border-box;
+    border-right: 2px solid #d8dbf4;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.memTable caption {
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    border-right: 2px solid rgb(9, 13, 53);
+}
+.memTable thead th {
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.memTable tbody {
+    text-align: left;
+    vertical-align: top;
+}
+.memTable tr {
+    height: 20px;
+}
+.memTable tr:last-child {
+    height: auto;
+}
+.memTable tbody td {
+    border: 2px solid rgb(226, 228, 240);
+    padding: 8px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,1 @@
+const addOne = function(n) { return n + 1; }

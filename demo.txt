@@ -1,0 +1,20 @@
+	push 1
+	push 5
+	mov EAX, [EBP-4]
+	lea EBX, [ESP]
+
+LOOP:
+	cmp EAX, [EBX]
+	jg DONE
+	inc EAX
+	jmp LOOP
+
+FUNC:
+	push 1
+	push deadbeef
+	ret 8
+
+DONE:
+	call FUNC
+	pop ECX
+	pop EDX
