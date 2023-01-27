@@ -612,6 +612,14 @@ function defineGlobalFunctions() {
 
         DOMcode.innerHTML= newProgram;
     }
+
+    window.loadDemo = async function() {
+
+        let data = await fetch("./demo.txt");
+        
+        DOMcode.innerText = await data.text();
+
+    }
 }
 defineGlobalFunctions();
 
